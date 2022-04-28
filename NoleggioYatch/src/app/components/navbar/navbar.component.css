@@ -1,0 +1,13 @@
+.topnav-centered {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+
+  a {
+    padding: 8px;
+    background-color: #dddddd;
+  }
