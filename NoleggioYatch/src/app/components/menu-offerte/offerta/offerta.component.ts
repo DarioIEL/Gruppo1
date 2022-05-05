@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OffertaServiceService } from './offerta-service.service';
 
 @Component({
   selector: 'app-offerta',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OffertaComponent implements OnInit {
 
-  constructor() { }
+   offerte : string[]=[];
+  constructor(private offertaService: OffertaServiceService ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+     this.offertaService.getBarche()
+          .subscribe(data => {this.offerte = data});
   }
 
 }

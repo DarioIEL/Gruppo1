@@ -10,7 +10,7 @@ import { YachtComponent } from './components/elenco-yacht/yacht/yacht.component'
 import { ModYachtComponent } from './components/elenco-yacht/mod-yacht/mod-yacht.component';
 import { MenuOfferteComponent } from './components/menu-offerte/menu-offerte.component';
 import { OffertaComponent } from './components/menu-offerte/offerta/offerta.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import { OffertaComponent } from './components/menu-offerte/offerta/offerta.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
